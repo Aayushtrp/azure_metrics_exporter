@@ -36,8 +36,8 @@ func GetTimes() (string, string) {
 	now := time.Now().UTC()
 
 	// Use query delay of 3 minutes when querying for latest metric data
-	endTime := now.Add(time.Minute * time.Duration(-3)).Format(time.RFC3339)
-	startTime := now.Add(time.Minute * time.Duration(-4)).Format(time.RFC3339)
+	endTime := now.Add(time.Minute * time.Duration(-0)).Format(time.RFC3339)
+	startTime := now.Add(time.Minute * time.Duration(-1)).Format(time.RFC3339)
 	return endTime, startTime
 }
 
